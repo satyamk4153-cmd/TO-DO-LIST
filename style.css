@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#taskInput {
+    padding: 10px 15px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    margin:10px;
+}
+
+#taskInput:focus {
+    border-color: #555;
+}
+
+#addTask {
+    padding: 10px 15px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addTask:hover {
+    background-color: #555;
+}
+
+
+.board {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-height: 400px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.column h2 {
+    text-align: center;
+}
+
+.task {
+    background-color: white;
+    padding: 15px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: grab;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+
+
+
+
+.task-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.edit-btn {
+    border: none;
+    background: none;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn:hover {
+    color: #21618c;
+}
